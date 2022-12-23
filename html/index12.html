@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input tipleri</title>
+</head>
+<body>
+    <form action="deneme.php" method="get" novalidate> <!--onaylanması gereknleri boşver submit basınca direkt kaydet demek için novalidate-->
+        Type text : <input type="text" name="isim"  readonly value="Emre Altunbilek"><br><br> <!--readonly value sabit ve değiştirelemez veriyi tutuyo submit edince veriyi kaydediyo-->
+        Type password : <input type="password"><br><br>
+        Type password : <input type="password"><br><br>
+        Type submit : <input type="submit"   formaction="test.php"><br><br> <!--formda verdiğimizi eziyo bunu önemli sayıyo ve buraya gönderiyo-->
+        Type reset : <input type="reset"><br><br>
+        Type button : <input type="button" onclick="alert('selam')" value="Beni tıkla"><br><br>
+        Type color : <input type="color" name="color"><br><br>
+        Type date : <input type="date" name="tarih" min="2019-04-04" max="2020-04-04"><br><br>
+        Type email : <input type="email" value="emre@emre.com" disabled name="email" min="2019-04-04" max="2020-04-04"><br><br> <!--disabled name submit edince gönderilmiyo içi boş gibi oluyor-->
+        Type file : <input type="file" multiple name="file" min="2019-04-04" max="2020-04-04"><br><br><!--multible birden fazla doysa seç-->
+        Type month : <input type="month" name="month" ><br><br>
+        Type number : <input type="number" step="5" name="number" min="18" max="99" ><br><br> <!--step numarayı 5 -5 arttırmayı sağlar-->
+        Type range : <input type="range" name="range" min="40" max="50" ><br><br>
+        Type search : <input type="search" autofocus required size="10" maxlength="10" name="search" ><br><br> <!--AutoFocus sayfa açılınca ilk oradan başlatıyo-->
+        Type tel : <input type="tel"  placeholder="666-55-22" name="telefon" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" ><br><br> <!--alan tutma silik bi şekilde yazış şeklini belirtir required yazarsan aksini kabul etmez-->
+        Type time : <input type="time" name="zaman" ><br><br>
+        Type url : <input type="url" autocomplete name="url" ><br><br> <!-- autocomplete otomatik hafızadaki verileri doldurmaya çalışır-->
+        Type url : <input type="week" name="week" ><br><br>
+    </form>
+    
+</body>
+</html>

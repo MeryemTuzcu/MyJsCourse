@@ -1,0 +1,49 @@
+.input{
+    margin: 0.5em;
+}
+
+.input{
+    border: 1px solid #aaa;
+    outline: none;
+    font-size: inherit;
+    padding: .5em;
+    border-radius: .25em;
+
+
+}
+
+.input:focus{
+    border-color: rgb(255, 0, 0);
+    box-shadow: 0 0 5px 0 rgb(109, 1, 1);
+}
+.input-success{
+    border: 1px solid rgb(120, 241, 120);
+}
+
+.input-success:focus{
+    border: 1px solid rgb(60, 137, 60);
+    box-shadow: 0 0 5px 0 rgb(60, 137, 60);
+
+}
+
+.input-error{
+    border: 1px solid rgb(230, 212, 17);
+}
+
+.input-error:focus{
+    border: 1px solid;
+    box-shadow: 0 0 5px 0 rgb(173, 160, 16);
+
+}
+
+.input-large{
+    font-size: 1.25em;
+}
+
+.input-small{
+    font-size: 0.75em;
+}
+
+.input:disabled{
+    background-color: aliceblue;
+}

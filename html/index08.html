@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        caption{
+            font-size:32px;
+        }
+
+        table , #tablo1 td, #tablo1 th{
+            border: 2px solid blue;
+            border-collapse:collapse;
+        }
+        table , #tablo2 td, #tablo2 th{
+            border: 2px solid red;
+            border-collapse:collapse;
+        }
+        #tablo1 tr:nth-child(even) {
+              background-color: teal;
+        }
+        #tablo1 tr:nth-child(odd) {
+              background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <table id="tablo1" style="width: 100%">
+        <tr>
+            <th>
+                İsim (table-> tr-> th)
+            </th>
+            <th>
+                Soyisim 
+            </th>
+            <th>
+               Yaş
+            </th>
+            <th>
+                Resim
+             </th>
+        </tr>
+        <tr>
+            <td>
+                Meryem(table-> tr ->td) 
+
+            </td>
+            <td>
+                Tuzcu
+
+            </td>
+            <td>
+                22
+
+            </td>
+            <td>
+                <img src="img/kitten2.jpeg" alt="" style="width: 50px; height: 50px;">
+
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+
+
+    <table id="tablo2" style="width: 100%">
+        <caption>Deneme tablosu</caption>
+        
+        <tr>
+            <th>İsim: </th>
+            <td>Enes Şatır</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Telefon: </th>
+            <td>05555555545</td>
+        </tr>
+
+        <tr>
+            
+            <td>05333333353</td>
+        </tr>
+    
+        
+    </table>
+</body>
+</html>

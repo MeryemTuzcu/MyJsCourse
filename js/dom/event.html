@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 200;
+            background-color: teal;
+            padding: 2rem 2rem;
+            font-size: 2rem;
+            color: white;
+        }
+        .link, 
+        link:visited{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-family: 'Trebuchet MS' , 'Lucida Sans Unicode' , 'Lucida Grande' ,'Lucida Sans' , Arial, sans-serif;
+
+        }
+        .link:hover{
+            color: #333;
+
+        }
+
+        .yazi{
+            font-size: 2rem;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <form action="#" id="form1">
+        <input type="text" id="isim" class="isim " name="isim">
+        <button type="submit">Kaydet</button>
+        <ul class="liste"></ul>
+    </form>
+
+
+    <div class="parent">
+        <div class="child">
+            <h3 class="item child-item">Merhaba</h3>
+            <h3 class="item child-item">Merhaba</h3>
+            <h3 class="item child-item">Merhaba</h3>
+            <h3 class="item child-item">Merhaba</h3>
+        </div>
+    </div>
+    <!--https://ceyhunozdemir.com/-->
+    <div class="container">
+        <form action="https://ceyhunozdemir.com/" method="post" id="form">
+            <select name="sehir" id="sehir">
+                <option value="1">Bursa</option>
+                <option value="2">İzmir</option>
+            </select>
+            <input id="ad" type="text" placeholder="adınız">
+            <button type="reset" >Sil</button>
+            <button type="submit" >Gönder</button>
+            <button type="button" >Süs</button>
+        </form>
+        <a href="https://ceyhunozdemir.com/" class="link " target="_blank"  >Blog Sitesi</a>
+        <p id="ad2"  class="yazi">Merhaba</p>
+    </div>
+    <script src="app23.js"></script>
+    
+</body>
+</html>

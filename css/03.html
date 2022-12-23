@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .paragraf1{
+            color:rgb(3, 104, 101);
+            font-size: 32px;
+            background-color: aliceblue;
+            text-align: left; /* justfy soldan ve sağdan aynı şekilde hizalıyor*/
+           /*direction: rtl;
+            unicode-bidi: bidi-override;  cümleyii sağdan sola doğru hizalar örnk arapça için kullanılabilir */
+        }
+
+        .paragraf2{
+            text-decoration: underline;
+
+        }
+        .paragraf3{
+            text-transform: uppercase; /* . lowercase tüm harflei küçültür */
+            text-transform: capitalize;
+            text-indent: 100px; /* ilk kelimeyi soldan boşluk koydurur. */
+            letter-spacing: 4px; /* her bir harfin arasına boşluk*/
+            font-size: 26px;
+            line-height: 25px; /* her bir satır arasına boşluk*/
+        }
+        .paragraf4{
+            word-spacing: 10px;
+            white-space: normal; /*nowrap sayfa küçültülünce satır aşağı geçmiyor sağdan devam ediyor cümle okunmuyor */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .paragraf5{
+            text-shadow: 1px 1px red;
+            font-size: 25px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <!-- (p.paragraf$#paragrafim$)*5  5 kez classı paragrafim olan p oluşturduk --> 
+    <p id="paragraf" class="paragraf1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, repellendus?</p>
+    <br>
+    <p id="paragraf" class="paragraf2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, necessitatibus?</p>  
+    <br>
+    <p id="paragraf" class="paragraf3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae tempora, nihil dolore eveniet voluptate sit!</p>
+    <br>
+    <p id="paragraf" class="paragraf4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, id!</p>
+    <p id="paragraf"class="paragraf5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, possimus?</p>
+
+
+
+
+
+  
+    
+    
+</body>
+</html>

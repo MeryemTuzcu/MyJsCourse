@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css01</title>
+    <style>
+        #p1{
+            
+            border-style: solid;
+            border-color:lightskyblue;  
+            border-width: 5px;
+            padding: 20px;
+            border: 2px, rgb(255, 96, 96);
+            margin: 10px 20px 30px 40px; /* Yukarı sağ ,aşağı ve sol*/
+        }
+        #p2{
+            border: 5px green solid;
+            padding: 20 px;
+            border-width: 10px 30px;
+        }
+        #p3{
+            margin: 30px;
+            border-top: 5px blue solid ;
+            border-bottom: 15px teal dotted;
+            border-left: 3px solid;
+            border-right: 2px solid;
+            border-color: red blue purple black; /* Yukarı sağ aşağı ve sol*/
+            border-style: dotted dashed;
+            padding: 20px;
+        }
+        #p4{
+            margin: 80px 60px; /* yukarıdan aşağıdan ve sağdan soldan bırakacağı mesafe**/
+            border:4px red solid;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        #orta{
+            width: 300px;
+            background-color: aqua;
+            height: 300px;
+            margin: auto; /*
+            margin dışarıdaki elemanlarla arasındaki boşluğu ayarlarlarken
+            padding içeride bulunduğu eleman ile mesafesini ayarlar
+            */
+            box-sizing: border-box; /* margine kutunun şekli değişmeyecek, bu sayede içeridiki yazıyı rahatça ayarlıcaz*/
+            padding: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <p id="p1"> paragraf 1 </p>
+    <p id="p2"> paragraf 2 </p>
+    <p id="p3"> paragraf 3 </p>
+    <p id="p4"> paragraf 4 </p>
+    <div id="orta">
+        Ortalanacak yapı
+
+    </div>
+
+
+
+
+</body>
+</html>

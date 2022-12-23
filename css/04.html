@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 300px;
+            
+            border: 1px solid red;
+
+        }
+        .item{
+            background-color: orange;
+            height: 30px;
+            margin: 10px 0;
+
+        }
+        .item-yuzde{
+            width: 50% ;
+        }
+        .item-view-width{
+            width:  50vw;/*
+            açılan cihaza göre ayarlıyor, 50% ile çok minik bir fark var*/
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="item item-yuzde">Yüzde elli</div>
+    <div class="item item-view-width">Yüzde elli view width </div>
+
+<!-- .parent>(.item)*2-->
+    <div class="parent">
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+   
+</body>
+</html>

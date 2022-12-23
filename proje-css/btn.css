@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+
+}
+
+.btn{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: .5em 1em; /* em ya içinde bulunduğu ya da parentının font sizezını kullanıyor 
+    fakat rem kullanılsaydı dışarıdaki sayfanın boyutu ne kadar büyürse büyüsün butonlar küçük kalırdı*/
+    font-size: 1em;
+    border-radius: .4em;
+}
+.btn:hover, .btn:focus{
+    background-color: #ddd;
+    box-shadow: 0 0 5px 0 #ccc;
+
+}
+
+.btn-primary{
+    background-color: rgb(48, 90, 76);
+    border-color: rgb(86, 186, 152);
+    color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    background-color: rgb(48, 90, 76);
+    box-shadow:  0 0 5px 0 rgb(86, 186, 152);
+}
+
+.btn-accent{
+    background-color: rgb(52, 75, 150);
+    color: white;
+    border-color: rgb(5, 24, 87);
+}
+
+.btn-accent:hover, .btn-accent:focus{
+    background-color: rgb(40, 40, 137);
+    box-shadow: 0 0 5px 0 rgb(5, 24, 87);
+}
+
+.btn-danger{
+    background-color: hsl( 345, 90%, 43%);
+    color: white;
+    border-color: hsl( 345, 90%, 33%);
+}
+
+.btn-danger:hover, .btn-accent:focus{
+    background-color: hsl( 345, 90%, 37%);
+    box-shadow: 0 0 5px 0 hsl( 345, 90%, 33%);
+}
+
+.btn-large{
+    font-size:1.25em;
+}
+
+.btn-small{
+    font-size:0.75em;
+}
+
+.btn-oval{
+    border-radius: 100px;
+}

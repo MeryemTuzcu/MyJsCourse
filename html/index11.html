@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+<body>
+    <form action="degerlerial.html" method="get">
+        <fieldset>
+            <legend>Ad Soyad Bilgisi</legend>
+            <label for="ad">Adınızı giriniz(label)</label>
+            <input type="text" id="ad"name="ad"><br>
+
+            <label for="soyad">Soyadınızı giriniz</label>
+            <input type="text" id="soyad" name="soyad" ><br>
+
+            <label for="il">İl</label>
+            <input list="sehirler" id="il" name="il" ><br>
+            <datalist id="sehirler">
+                <option value="Bursa"></option>
+                <option value="Ankara"></option>
+                <option value="İzmir"></option>
+                <option value="Van"></option>
+                <option value="Erzincan"></option>
+            </datalist>
+        </fieldset> 
+        <!--get ile alınca rlden gönderdiğimiz veriler gözüküyo
+    fakat post ile alırsak işfre vs göstermemk için daha doğru bir yöntem-->
+        <fieldset>
+            <legend>Diğer Bilgiler</legend>
+            <label for="erkek">Erkek </label>
+            <input type="radio" name="cinsiyet" value="erkek" id="erkek">
+    
+            <label for="kadın">Kadın </label>
+            <input type="radio" name="cinsiyet" value="kadın" id="kadın" ><br>
+            <br>
+            <label for="mavi">Mavi</label>
+            <input type="checkbox" value="mavi" id="mavi"name="chbmavi" checked >
+    
+            <label for="yeşil">Yeşil</label>
+            <input type="checkbox" value="yeşil " id="yeşil " name="chbyesil">
+    
+            <label for="kırmızı">Kırmızı</label>
+            <input type="checkbox" value="kırmızı" id="kırmızı" name="chbkirmz">
+
+        </fieldset>
+
+       
+        <br>
+        <input type="submit" value="Gönder" >
+        <input type="reset" value="İnput ile Sil" >
+
+        <input type="button" onclick="alert('Merhaba')" value="Normal" >
+<br>
+        <select name="arabalar" id="arabalar" multiple >
+            <option selected value="honda">Honda</option>
+            <option value="reno">Reno</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="bmw">Bmw</option>
+        </select>
+<br>
+<br>
+        <label for="adres">Adres:</label>
+        <textarea name="adres" id="adres" cols="50" rows="2"></textarea>
+        <br>
+        <br>
+        <label for="bio">Bio:</label>
+        <textarea name="adres" id="bio" style="width: 200px;height: 50px;"></textarea>
+    <br><br>
+        <button type="reset" onclick="alert('Silindi')"><img src="data:image/jpeg;base64,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" ></button>
+    
+    </form>
+    
+</body>
+</html>
