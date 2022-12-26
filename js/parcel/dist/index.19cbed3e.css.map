@@ -1,0 +1,1 @@
+{"mappings":"ACEA","sources":["index.19cbed3e.css","src/scss/style.scss"],"sourcesContent":["body {\n  background-color: purple;\n}\n\n/*# sourceMappingURL=index.19cbed3e.css.map */\n","$ana-renk: purple;\r\n\r\nbody{\r\n    background-color: $ana-renk;\r\n}"],"names":[],"version":3,"file":"index.19cbed3e.css.map"}

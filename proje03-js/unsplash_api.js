@@ -18,6 +18,10 @@ class UnsplashApi {
 
         });
     }
+
+
+
+    
     
 
     async randomResimGetir() {
